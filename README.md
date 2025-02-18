@@ -15,7 +15,7 @@ spring.jpa.hibernate.ddl-auto=update
 Using Maven:
 mvn spring-boot:run
 
-API Documentation
+API Documentation : 
 1. User API
 Register a User
 POST /api/users/register
@@ -85,25 +85,25 @@ GET /api/heartrate/1 Response:
 ]
 
 The API allows:
-User Registration & Login (without authentication protocols, just email-password matching).
-Managing Patients (adding and retrieving patient details).
-Heart Rate Monitoring (recording and retrieving heart rate data).
+1. User Registration & Login (without authentication protocols, just email-password matching).
+2. Managing Patients (adding and retrieving patient details).
+3. Heart Rate Monitoring (recording and retrieving heart rate data).
 
 Tech Stack :
-Java 17/21 (or your selected version)
-Spring Boot 3.3.8 (or your chosen version)
-Spring Data JPA (for database operations)
-H2 Database (in-memory database for testing)
-JUnit & Mockito (for unit testing)
-Lombok (for reducing boilerplate code)
-Spring Boot DevTools (for live reloading)
+1. Java 17/21 (or your selected version)
+2. Spring Boot 3.3.8 (or your chosen version)
+3. Spring Data JPA (for database operations)
+4. H2 Database (in-memory database for testing)
+5. JUnit & Mockito (for unit testing)
+6. Lombok (for reducing boilerplate code)
+7. Spring Boot DevTools (for live reloading)
 
 Assumptions & Decisions :
-No authentication mechanism (JWT or OAuth2 is not implemented; only email-password matching is used).
-H2 in-memory database is used for testing, but MySQL can be configured.
-Timestamps for heart rate use1 format (yyyy-MM-dd'T'HH:mm:ss).
+1. No authentication mechanism (JWT or OAuth2 is not implemented; only email-password matching is used).
+2. H2 in-memory database is used for testing, but MySQL can be configured.
+3. Timestamps for heart rate use1 format (yyyy-MM-dd'T'HH:mm:ss).
 
 Future Enhancements :
-Implement JWT-based authentication for security.
-Add Swagger API documentation.
-Integrate with external health monitoring devices.
+1. Implement JWT-based authentication for security.
+2. Add Swagger API documentation.
+3. Integrate with external health monitoring devices.
